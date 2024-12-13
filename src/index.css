@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles using @apply should be placed in a @layer directive */
+@layer components {
+  .custom-class {
+    @apply bg-blue-500 text-white px-4 py-2 rounded;
+  }
+
+  .another-custom-class {
+    @apply font-bold text-lg hover:text-blue-600;
+  }
+}
+
+:root {
+  --primary: #764dff;
+  --secondary: #1a91ff;
+}
+
+body {
+  @apply m-0 antialiased font-sans;
+}
+
+#root {
+  @apply min-h-screen;
+}
